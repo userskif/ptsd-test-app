@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Результаты теста {{ result['test_type'] }}</h2>
+    <p>Ваши результаты:</p>
+    <pre>{{ result['data'] }}</pre>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">На главную</a>
+</div>
+{% endblock %}

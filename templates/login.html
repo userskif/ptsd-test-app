@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Вход</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.email.label }}<br>
+        {{ form.email(size=32) }}
+    </div>
+    <div>
+        {{ form.password.label }}<br>
+        {{ form.password(size=32) }}
+    </div>
+    <div>
+        {{ form.submit() }}
+    </div>
+    {% if message %}
+    <p style="color:red;">{{ message }}</p>
+    {% endif %}
+</form>
+{% endblock %}

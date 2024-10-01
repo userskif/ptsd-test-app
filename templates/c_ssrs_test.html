@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Шкала серьёзности суицидальных намерений (C-SSRS)</h2>
+<form method="POST" action="/submit-c-ssrs">
+    <label>1. Возникало ли у Вас желание умереть или заснуть и не просыпаться?</label><br>
+    <input type="radio" name="question_1" value="yes"> Да<br>
+    <input type="radio" name="question_1" value="no"> Нет<br>
+
+    <label>2. Думали ли Вы, в самом деле, о том, чтобы убить себя?</label><br>
+    <input type="radio" name="question_2" value="yes"> Да<br>
+    <input type="radio" name="question_2" value="no"> Нет<br>
+
+    <button type="submit">Отправить</button>
+</form>
+{% endblock %}

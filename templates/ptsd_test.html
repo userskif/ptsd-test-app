@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Опросник на скрининг ПТСР (TSQ)</h2>
+<form method="POST" action="/submit-ptsd">
+    <label>1. Тягостные мысли или воспоминания о событии приходили мне в голову против моей воли</label><br>
+    <input type="radio" name="q1" value="yes"> Да<br>
+    <input type="radio" name="q1" value="no"> Нет<br>
+    <!-- Добавьте остальные вопросы по аналогии -->
+
+    <button type="submit">Отправить</button>
+</form>
+{% endblock %}

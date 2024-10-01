@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Выберите тест для прохождения:</h2>
+<ul>
+    <li><a href="{{ url_for('hads_test') }}">Госпитальная шкала тревоги и депрессии (HADS)</a></li>
+    <li><a href="{{ url_for('c_ssrs_test') }}">Шкала серьёзности суицидальных намерений (C-SSRS)</a></li>
+    <li><a href="{{ url_for('ptsd_test') }}">Опросник на скрининг ПТСР (TSQ)</a></li>
+</ul>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Госпитальная шкала тревоги и депрессии (HADS)</h2>
+<form method="POST" action="/submit-hads">
+    <h3>Уровень тревоги</h3>
+    <label>1. Я испытываю напряжение, мне не по себе</label><br>
+    <input type="radio" name="anxiety_1" value="3"> Все время<br>
+    <input type="radio" name="anxiety_1" value="2"> Часто<br>
+    <input type="radio" name="anxiety_1" value="1"> Время от времени<br>
+    <input type="radio" name="anxiety_1" value="0"> Совсем не испытываю<br>
+    <!-- Остальные вопросы -->
+
+    <h3>Уровень депрессии</h3>
+    <label>1. То, что приносило мне удовольствие, и сейчас вызывает у меня такое же чувство</label><br>
+    <input type="radio" name="depression_1" value="0"> Определенно<br>
+    <input type="radio" name="depression_1" value="1"> Наверно<br>
+    <input type="radio" name="depression_1" value="2"> Лишь в малой степени<br>
+    <input type="radio" name="depression_1" value="3"> Совсем не так<br>
+    <!-- Остальные вопросы -->
+
+    <button type="submit">Отправить</button>
+</form>
+{% endblock %}
