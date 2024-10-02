@@ -167,4 +167,4 @@ def submit_ptsd():
     return jsonify({'status': 'success', 'total_score': total_score})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
